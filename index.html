@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,
+    100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+<style>
+  #body {
+    background-color: #d57eeb;
+    font-family: "Roboto", sans-serif;
+  }
+  ul {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+    padding-left: 300px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 7px 8px;
+  }
+  a:hover {
+    background-color: bisque;
+    transition: 0.5s ease;
+  }
+  a.active {
+    background-color: bisque;
+  }
+  .container {
+    background: #fccb90;
+    width: 45%;
+    margin:70px auto;
+    padding: 15px;
+    border-radius: 20px;
+    height: 300%;
+  }
+  h1 {
+    font-weight: 700;
+    margin: 6px;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  img {
+    width: 300%;
+  }
+  .img-deg {
+    position: fixed;
+    right: 28%;
+    width: 10%;
+    border-radius: 10px;
+    top: 30%;
+  }
+  p {
+    font-size: 1.5em;
+    color: white;
+    margin: 10px;
+    line-height: 1.5;
+    margin-bottom: 50px;;
+  }
+  .moreText {
+    display: none;
+  }
+
+  .text.show-more .moreText {
+    display: inline;
+}
+
+  .text span {
+    color: black;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    padding: 8px;
+    margin: 10px;
+    color: white;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    border: 1px solid bisque;
+  }
+  button:hover {
+    background-color: bisque;
+    transition: 1s ease;
+  }
+</style>
+<body id="body">
+  <div class="container">
+    <ul>
+      <li><a href="" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#delivery">Delivery</a></li>
+      <li><a href="#contact">Contact</a></li>
+   </ul> 
+  <h1 id="change-text">Kota Bunny Chow </br>
+      With Chips</h1>
+  <button onclick="onChange()">Click Me</button> 
+  <div class="content">
+      <img src="bunny-chow.png" class="img-deg" />
+      <p class="text">
+          This is kind of like a bunny chow, faster food.<br>
+          Instead, the quarter loaf of bread is filled with french fries,<br>
+          ham, chakalaka, eggs and chips.<span class="moreText">In the quiet town of Kota<br>
+          Chow, nestled between rolling green hills and whispering<br>
+          bamboo groves, lived a curious little bunny named Momo.<br>
+          Unlike the other rabbits, Momo wore a tiny red scarf and<br>
+          had a nose for adventure. Every morning, she would hop <br>
+          through the cobbled streets of Kota Chow, visiting the tea shops and greeting the friendly shopkeepers. Children loved to follow her as she explored, 
+          always hoping she'd lead them to one of her secret hideouts — especially the one near the old pagoda, where wildflowers grew in rainbow 
+          clusters and the breeze always carried the sweet scent of jasmine.</span>
+      </p>
+  </div>
+      <button class="readMoreBtn">Read More</button>
+
+      <div id="body">Style Me</div>
+      <button onclick="changeStyle()">Change Style</button>
+      <button class="getStarted" onclick="alert('Button clicked')">ORDER NOW</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
